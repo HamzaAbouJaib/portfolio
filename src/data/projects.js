@@ -1,0 +1,183 @@
+const myProjects = [
+  {
+    title: "Mesh Island Generator",
+    desc: "Description",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Java",
+      "Apache Maven",
+      "Apache CLI",
+      "JTS Library",
+      "JUnit",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/Island-Generator",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription",
+    image:
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    tech: [
+      "Typescript",
+      "JavaScript",
+      "React JS",
+      "HTML Canvas API",
+      "Mantine UI",
+      "Vite JS",
+      "Git",
+      "GitHub",
+    ],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
+];
+
+export default myProjects;

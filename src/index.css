@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.resume-btn {
+  @apply text-lg bg-blue-500 p-3 text-blue-500 absolute w-max top-0 left-[50%] translate-x-[-50%];
+}
+
+.resume-btn::before {
+  content: "Donwload Resume";
+  @apply text-lg bg-slate-800 p-3 text-white absolute w-max -top-2 left-[46%] translate-x-[-50%] hover:top-0 hover:left-[50%] transition-all duration-500 ease-in-out;
+}
+
+.burger {
+  @apply w-6 h-5 relative text-3xl cursor-pointer lg:hidden;
+}
+
+.burger .bar {
+  @apply p-0 w-full h-[2px] bg-black block rounded-md transition-all duration-500 ease-in-out absolute;
+}
+
+.bar1 {
+  @apply top-0;
+}
+
+.active .bar1 {
+  @apply rotate-45 origin-[5%] w-7;
+}
+
+.bar2 {
+  @apply top-[50%] translate-y-[-50%];
+}
+
+.active .bar2 {
+  @apply bg-transparent;
+}
+
+.bar3 {
+  @apply bottom-0;
+}
+
+.active .bar3 {
+  @apply -rotate-45 origin-[5%] w-7;
+}
+
+.resume-social {
+  @apply hover:text-blue-500 duration-300 flex gap-3 items-center;
+}
+
+.resume-social i {
+  @apply text-2xl xl:text-4xl;
+}
+
+.resume-social div {
+  @apply flex flex-col;
+}
+
+.resume-social p {
+  @apply font-semibold xl:text-lg leading-none;
+}
+
+.resume-social a {
+  @apply max-xl:text-sm leading-none;
+}
