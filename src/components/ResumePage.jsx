@@ -1,3 +1,4 @@
+import ResumeExperience from "./ResumeExperience";
 import ResumeHeader from "./ResumeHeader";
 import ResumeSection from "./ResumeSection";
 import ResumeSkills from "./ResumeSkills";
@@ -8,6 +9,9 @@ const ResumePage = () => {
       <ResumeHeader />
       <ResumeSection title={"Technical Skills"}>
         <ResumeSkills />
+      </ResumeSection>
+      <ResumeSection title={"Experience"}>
+        <ResumeExperience />
       </ResumeSection>
     </div>
   );
