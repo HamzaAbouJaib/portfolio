@@ -20,7 +20,10 @@ const ResumePage = () => {
       >
         <p>
           Unable to display PDF file.{" "}
-          <a href="../public/Resume.pdf">Download</a> instead.
+          <a href="../public/Resume.pdf" target="_blank">
+            Download
+          </a>{" "}
+          instead.
         </p>
       </object>
     </div>
