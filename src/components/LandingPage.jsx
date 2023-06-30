@@ -1,6 +1,6 @@
 const LandingPage = () => {
   return (
-    <section className="flex items-center justify-center h-screen lg:w-[70%] mx-auto">
+    <section className="flex items-center justify-center h-screen lg:w-[90%] 2xl:w-[70%] mx-auto">
       <div className="max-w-[850px] flex flex-col items-center gap-6 px-20 lg:px-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-500">
           Hamza Abou Jaib

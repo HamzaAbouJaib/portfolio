@@ -30,7 +30,7 @@ const Navigation = () => {
     >
       <div
         className={
-          "flex items-center justify-between bg-white lg:w-[70%] mx-auto py-5 md:px-10 px-7 z-30"
+          "flex items-center justify-between bg-white lg:w-[90%] 2xl:w-[70%] mx-auto py-5 md:px-10 px-7 z-30"
         }
       >
         <div className="font-semibold text-2xl cursor-pointer flex items-baseline">
