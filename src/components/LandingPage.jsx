@@ -29,7 +29,9 @@ const LandingPage = () => {
           <i className="fa-solid fa-envelope hover:text-blue-500 duration-300 cursor-pointer"></i>
         </div>
         <div className="relative w-full mt-2">
-          <button className="resume-btn">Download Resume</button>
+          <a href="../public/Resume.pdf" target="_blank" className="resume-btn">
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
