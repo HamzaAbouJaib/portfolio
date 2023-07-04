@@ -13,7 +13,7 @@ export const AboutPage = () => {
             dolores?
           </p>
           <br />
-          <p className="mb-8">
+          <p className="mb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa
             expedita dicta quis delectus. Dolorum odit delectus corporis
             temporibus quidem.
@@ -21,9 +21,9 @@ export const AboutPage = () => {
           <a
             href="../public/Resume.pdf"
             target="_blank"
-            className="btn-primary"
+            className="resume-btn-secondary"
           >
-            View Resume
+            Download Resume
           </a>
         </div>
         <div className="flex flex-col justify-between">
