@@ -22,6 +22,13 @@ html {
 .resume-btn {
   @apply text-lg bg-blue-500 p-3 text-blue-500 absolute w-max top-0 left-[50%] translate-x-[-50%];
 }
+.resume-btn-secondary {
+  @apply text-lg bg-blue-500 p-3 text-white transition-all duration-500 ease-in-out;
+}
+
+.resume-btn-secondary:hover {
+  @apply bg-blue-600;
+}
 
 .resume-btn::before {
   content: "Donwload Resume";
