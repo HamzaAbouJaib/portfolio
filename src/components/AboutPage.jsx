@@ -1,5 +1,16 @@
 import { Skill } from "./Skill";
 
+const frontPageskills = [
+  "HTML/CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "TailwindCSS",
+  "MongoDB",
+  "Git",
+  "GitHub",
+];
+
 export const AboutPage = () => {
   return (
     <section id="about" className=" py-5 md:px-10 px-7 mb-10">
@@ -30,13 +41,10 @@ export const AboutPage = () => {
         </div>
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="text-2xl font-semibold mb-5">Technical Skills</h3>
-            <div className="grid max-sm:grid-cols-3 grid-cols-4 xl:grid-cols-5 gap-10 w-full max-md:place-items-center">
-              {["devicon-JavaScript-plain"].map((skillIcons) => (
-                <Skill
-                  name={skillIcons.split("-")[1]}
-                  icon={skillIcons.toLowerCase()}
-                />
+            <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
+            <div className="grid grid-cols-3 gap-y-3">
+              {frontPageskills.map((skill) => (
+                <Skill name={skill} />
               ))}
             </div>
           </div>
