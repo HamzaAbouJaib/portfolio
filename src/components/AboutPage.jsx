@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { Skill } from "./Skill";
+import SkillModal from "./SkillModal";
 
 const frontPageskills = [
   "HTML/CSS",
@@ -12,6 +14,16 @@ const frontPageskills = [
 ];
 
 export const AboutPage = () => {
+  const [showSkillsModal, setShowSkillsModal] = useState(false);
+
+  useEffect(() => {
+    if (showSkillsModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showSkillsModal]);
+
   return (
     <section id="about" className=" py-5 md:px-10 px-7 mb-10">
       <h1 className="text-3xl font-semibold">About</h1>
@@ -48,7 +60,15 @@ export const AboutPage = () => {
               ))}
             </div>
           </div>
-          <button className="btn-secondary">View All Skills</button>
+          {showSkillsModal && (
+            <SkillModal setShowSkillsModal={setShowSkillsModal} />
+          )}
+          <button
+            className="btn-secondary"
+            onClick={() => setShowSkillsModal(true)}
+          >
+            View All Skills
+          </button>
         </div>
       </div>
     </section>
