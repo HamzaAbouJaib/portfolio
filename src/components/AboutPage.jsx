@@ -17,7 +17,7 @@ export const AboutPage = () => {
       <h1 className="text-3xl font-semibold">About</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
       <div className="grid lg:grid-cols-2 mt-10 gap-32 max-xl:w-[80%] m-auto">
-        <div>
+        <div className="flex justify-between flex-col">
           <h3 className="text-2xl font-semibold mb-5">Who am I?</h3>
           <p className="text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
@@ -42,12 +42,13 @@ export const AboutPage = () => {
         <div className="flex flex-col justify-between">
           <div>
             <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
-            <div className="grid grid-cols-3 gap-y-3">
+            <div className="grid grid-cols-3 gap-y-5">
               {frontPageskills.map((skill) => (
                 <Skill name={skill} />
               ))}
             </div>
           </div>
+          <button className="btn-secondary">View All Skills</button>
         </div>
       </div>
     </section>
