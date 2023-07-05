@@ -52,7 +52,7 @@ const Navigation = () => {
           <ul className="lg:flex lg:items-center">
             <li className="lg:ml-8 text-xl lg:my-0">
               <Link
-                to="/"
+                to="/#about"
                 className="hover:text-primary duration-500"
                 onClick={() => setOpened(false)}
               >
