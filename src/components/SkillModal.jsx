@@ -1,3 +1,6 @@
+import mySkills from "../data/skills";
+import { SkillSection } from "./SkillSection";
+
 const SkillModal = ({ setShowSkillsModal }) => {
   return (
     <div
@@ -27,6 +30,9 @@ const SkillModal = ({ setShowSkillsModal }) => {
             />
           </svg>
         </div>
+        {mySkills.map((skill) => (
+          <SkillSection skillType={skill.skillType} skills={skill.skills} />
+        ))}
       </div>
     </div>
   );
