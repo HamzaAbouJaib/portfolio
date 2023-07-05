@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import ProjectsPage from "./components/ProjectsPage";
 import ResumePage from "./components/ResumePage";
 import { AboutPage } from "./components/AboutPage";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         />
         <Route path="/resume" element={<ResumePage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
