@@ -4,7 +4,7 @@ const mySkills = [
     skills: [
       "devicon-JavaScript-plain",
       "devicon-React-plain",
-      "devicon-Angular JS-plain",
+      // "devicon-Angular JS-plain",
       "devicon-TailwindCSS-plain",
       "devicon-TypeScript-plain",
       "devicon-HTML5-plain",
@@ -19,15 +19,21 @@ const mySkills = [
       "devicon-Express-original",
       "devicon-Node JS-plain",
       "devicon-Next JS-plain",
+      "devicon-MongoDB-plain",
     ],
   },
   {
     skillType: "Tools",
     skills: [
+      "devicon-FireBase-plain",
       "devicon-Git-plain",
       "devicon-GitHub-plain",
-      "devicon-Docker-plain",
+      // "devicon-Docker-plain",
       "devicon-Photoshop-plain",
+      "devicon-Bash-plain",
+      "devicon-Latex-plain",
+      "devicon-npm-original-wordmark",
+      "devicon-Yarn-plain",
     ],
   },
 ];
