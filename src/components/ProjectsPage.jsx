@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectsPage = () => {
   return (
-    <section id="projects" className="pt-28 py-5 md:px-10 px-7 mb-10">
+    <section id="projects" className="pt-[5.5rem] py-5 md:px-10 px-7 mb-10">
       <h1 className="text-3xl font-semibold">Projects</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
       <p className="text-lg mt-10">

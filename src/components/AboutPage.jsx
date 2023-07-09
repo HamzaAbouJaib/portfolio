@@ -25,7 +25,7 @@ export const AboutPage = () => {
   }, [showSkillsModal]);
 
   return (
-    <section id="about" className="pt-28 py-5 md:px-10 px-7 mb-10">
+    <section id="about" className="pt-[5.5rem] py-5 md:px-10 px-7 mb-10">
       <h1 className="text-3xl font-semibold">About</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
       <div className="grid lg:grid-cols-2 mt-10 gap-x-32 gap-y-12 justify-between">
