@@ -20,16 +20,16 @@ html {
 }
 
 .resume-btn {
-  @apply text-lg bg-blue-500 p-3 text-blue-500 absolute w-max top-0 left-[50%] translate-x-[-50%];
+  @apply text-xl bg-blue-500 p-3 text-blue-500 absolute w-max top-0 left-[50%] translate-x-[-50%];
 }
 
 .resume-btn::before {
   content: "Donwload Resume";
-  @apply text-lg bg-slate-800 p-3 text-white absolute w-max -top-2 left-[46%] translate-x-[-50%] hover:top-0 hover:left-[50%] transition-all duration-500 ease-in-out;
+  @apply text-xl bg-slate-800 p-3 text-white absolute w-max -top-2 left-[46%] translate-x-[-50%] hover:top-0 hover:left-[50%] transition-all duration-500 ease-in-out;
 }
 
 .resume-btn-secondary {
-  @apply text-lg w-max bg-blue-500 p-3 text-white transition-all duration-500 ease-in-out;
+  @apply text-xl w-max bg-blue-500 p-3 text-white transition-all duration-500 ease-in-out;
 }
 
 .resume-btn-secondary:hover {
@@ -37,7 +37,7 @@ html {
 }
 
 .btn-secondary {
-  @apply text-lg w-max bg-slate-800 p-3 text-white transition-all duration-500 ease-in-out;
+  @apply text-xl w-max bg-slate-800 p-3 text-white transition-all duration-500 ease-in-out;
 }
 
 .btn-secondary:hover {
