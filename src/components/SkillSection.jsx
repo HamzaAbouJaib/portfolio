@@ -9,7 +9,7 @@ export const SkillSection = ({ skillType, skills }) => {
           return (
             <div className="flex flex-col justify-center items-center">
               <i
-                className={`${skillIcon} text-primary text-[4rem] colored`}
+                className={`${skillIcon} text-primary text-[2rem] md:text-[4rem] colored`}
                 title={skillName}
               />
               <p className="mt-1">{skillName}</p>
