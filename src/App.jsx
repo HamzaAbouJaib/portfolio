@@ -14,7 +14,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="lg:w-[90%] 2xl:w-[70%] mx-auto">
+            <div className="lg:w-[90%] 2xl:w-[80%] mx-auto">
               <LandingPage />
               <AboutPage />
               <ProjectsPage />
