@@ -12,8 +12,8 @@ const LandingPage = () => {
           Software Developer
         </h5>
         <p className="text-center text-xl max-w-[40rem]">
-          I am a third-year Software Engineering student at McMaster University
-          with a passion for full-stack web development.
+          A Software Engineering student at McMaster University with a passion
+          for full-stack web development.
         </p>
         <div className="flex items-center justify-center gap-4 text-[2rem]">
           <i className="fa-brands fa-linkedin hover:text-blue-500 duration-300 cursor-pointer"></i>
