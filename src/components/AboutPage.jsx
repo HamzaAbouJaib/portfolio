@@ -32,8 +32,8 @@ export const AboutPage = () => {
         <div className="flex justify-between flex-col col-span-6 max-lg:pr-8">
           <h3 className="text-2xl font-semibold mb-3">Who am I?</h3>
           <p className="text-xl mb-3">
-            I am a software engineering student at McMaster University. My
-            passion lies in the field of web and app development.
+            I am a third-year software engineering student at McMaster
+            University. My passion lies in the field of web and app development.
           </p>
           <br />
           <p className="mb-3 text-xl">
