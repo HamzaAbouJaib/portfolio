@@ -5,16 +5,15 @@ const LandingPage = () => {
         <h1 className="text-4xl sm:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-500">
           Hamza Abou Jaib
         </h1>
-        <h3 className="text-3xl sm:text-4xl font-bold text-center">
+        {/* <h3 className="text-3xl sm:text-4xl font-bold text-center">
+          Software Engineering Student
+        </h3> */}
+        <h5 className="text-3xl font-bold text-center text-gray-800 border-b-2 border-b-blue-500 pb-5">
           Software Developer
-        </h3>
-        <h5 className="text-2xl font-bold text-center text-gray-600 border-b-2 border-b-blue-500 pb-5">
-          McMaster diploma
         </h5>
         <p className="text-center text-xl max-w-[40rem]">
           I am a third-year Software Engineering student at McMaster University
-          with a profound passion for programming, particularly in web
-          development.
+          with a passion for full-stack web development.
         </p>
         <div className="flex items-center justify-center gap-4 text-[2rem]">
           <i className="fa-brands fa-linkedin hover:text-blue-500 duration-300 cursor-pointer"></i>
