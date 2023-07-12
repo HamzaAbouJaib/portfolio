@@ -28,47 +28,55 @@ export const AboutPage = () => {
     <section id="about" className="pt-[5.5rem] py-5 md:px-10 px-7 mb-10">
       <h1 className="text-3xl font-semibold">About</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
-      <div className="grid lg:grid-cols-2 mt-10 gap-x-32 gap-y-12 justify-between">
-        <div className="flex justify-between flex-col">
+      <div className="grid lg:grid-cols-10 mt-10 gap-x-20 gap-y-12 justify-between">
+        <div className="flex justify-between flex-col col-span-6 max-lg:pr-8">
           <h3 className="text-2xl font-semibold mb-3">Who am I?</h3>
           <p className="text-xl mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            repellat dicta obcaecati a quis voluptatem quo nam ipsam fugiat
-            impedit deserunt sit quisquam maiores aliquam ut quasi quidem, et
-            dolores?
+            I am a software engineering student at McMaster University. My
+            passion lies in the field of web and app development.
           </p>
           <br />
-          <p className="mb-10 text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa
-            expedita dicta quis delectus. Dolorum odit delectus corporis
-            temporibus quidem.
+          <p className="mb-3 text-xl">
+            Since taking my first programming course in high school, I have been
+            captivated by the inner workings of the web and the fascinating
+            world of technology. It was during those early experiences that I
+            discovered my love for programming and the web.
           </p>
-          <a
-            href="../public/Resume.pdf"
-            target="_blank"
-            className="resume-btn-secondary"
-          >
-            Download Resume
-          </a>
-        </div>
-        <div className="flex flex-col justify-between">
-          <div>
+          <p className="text-xl">
+            I am driven by the desire to create meaningful digital experiences
+            that make a difference in people's lives. The opportunity to
+            positively impact users through intuitive design, seamless
+            functionality, and engaging interactions motivates me every day.
+          </p>
+          <div className="mt-10">
             <h3 className="text-2xl font-semibold mb-3">Technical Skills</h3>
-            <div className="grid max-sm:grid-cols-2 max-lg:grid-cols-3 max-xl:grid-cols-2 grid-cols-3 gap-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {frontPageskills.map((skill) => (
                 <Skill name={skill} />
               ))}
             </div>
+            {showSkillsModal && (
+              <SkillModal setShowSkillsModal={setShowSkillsModal} />
+            )}
           </div>
-          {showSkillsModal && (
-            <SkillModal setShowSkillsModal={setShowSkillsModal} />
-          )}
-          <button
-            className="btn-secondary mt-10"
-            onClick={() => setShowSkillsModal(true)}
-          >
-            View All Skills
-          </button>
+          <div>
+            <button
+              className="btn-secondary mt-10 mr-5"
+              onClick={() => setShowSkillsModal(true)}
+            >
+              View All Skills
+            </button>
+            <a
+              href="../public/Resume.pdf"
+              target="_blank"
+              className="resume-btn-secondary"
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col justify-between col-span-4">
+          <h1>Image</h1>
         </div>
       </div>
     </section>
