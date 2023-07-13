@@ -1,3 +1,5 @@
+import noImage from "../resources/noImage.png";
+
 export const SkillSection = ({ skillType, skills }) => {
   return (
     <div>
@@ -8,10 +10,14 @@ export const SkillSection = ({ skillType, skills }) => {
           const skillIcon = skill.toLowerCase().replace(" ", "");
           return (
             <div className="flex flex-col justify-center items-center">
-              <i
-                className={`${skillIcon} text-primary text-[2rem] md:text-[4rem] colored`}
-                title={skillName}
-              />
+              {skill.split("-")[0] === "noImage" ? (
+                <img src={noImage} className="h-8 w-8 md:h-16 md:w-16" />
+              ) : (
+                <i
+                  className={`${skillIcon} text-primary text-[2rem] md:text-[4rem] colored`}
+                  title={skillName}
+                />
+              )}
               <p className="mt-1">{skillName}</p>
             </div>
           );
