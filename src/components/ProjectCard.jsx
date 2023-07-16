@@ -1,8 +1,10 @@
-const ProjectCard = ({ title, desc, image, tech, githubLink, demoLink }) => {
+import ImageCarousel from "./ImageCarousel";
+
+const ProjectCard = ({ title, desc, images, tech, githubLink, demoLink }) => {
   return (
     <div className="flex flex-col gap-5 w-full bg-blue-500/5">
       <div className="w-full">
-        <img src={image} alt={title + " Image"} />
+        <ImageCarousel images={images} />
       </div>
       <div className="flex flex-col justify-between h-full gap-7 px-7 pb-7">
         <div className="space-y-2">
