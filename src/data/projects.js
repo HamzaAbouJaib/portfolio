@@ -1,10 +1,15 @@
+import exotech1 from "../resources/project-images/exotech/exotech-1.png";
+import exotech2 from "../resources/project-images/exotech/exotech-2.png";
+import exotech4 from "../resources/project-images/exotech/exotech-4.png";
+import exotech5 from "../resources/project-images/exotech/exotech-5.png";
+import exotech6 from "../resources/project-images/exotech/exotech-6.png";
+import exotech7 from "../resources/project-images/exotech/exotech-7.png";
+
 const myProjects = [
   {
     title: "ExoTech - Ecommerce Store",
     desc: "A technology ecommerce store featuring user authentication, favoriting products, order history, a cart system, and secure payment processing using Stripe.",
-    images: [
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    ],
+    images: [exotech1, exotech2, exotech4, exotech5, exotech6, exotech7],
     tech: [
       "TypeScript",
       "React",
