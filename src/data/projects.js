@@ -13,6 +13,13 @@ import exotechDashboard4 from "../resources/project-images/exotech-dashboard/exo
 import exotechDashboard5 from "../resources/project-images/exotech-dashboard/exotech-dashboard-5.png";
 import exotechDashboard6 from "../resources/project-images/exotech-dashboard/exotech-dashboard-6.png";
 import exotechDashboard7 from "../resources/project-images/exotech-dashboard/exotech-dashboard-7.png";
+// Expense Tracker Images
+import expense1 from "../resources/project-images/expense-app/expense-app-1.png";
+import expense2 from "../resources/project-images/expense-app/expense-app-2.png";
+import expense3 from "../resources/project-images/expense-app/expense-app-3.png";
+import expense4 from "../resources/project-images/expense-app/expense-app-4.png";
+import expense5 from "../resources/project-images/expense-app/expense-app-5.png";
+import expense6 from "../resources/project-images/expense-app/expense-app-6.png";
 
 const myProjects = [
   {
@@ -67,9 +74,7 @@ const myProjects = [
   {
     title: "Expense Tracker",
     desc: "An expense tracking website that helps users track their budget and expenses by providing transaction history and categorized expenses.",
-    images: [
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    ],
+    images: [expense1, expense2, expense3, expense4, expense5, expense6],
     tech: ["Typescript", "JavaScript", "React", "Mantine UI", "Vite JS"],
     githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
     demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
