@@ -1,9 +1,18 @@
+// ExoTech Images
 import exotech1 from "../resources/project-images/exotech/exotech-1.png";
 import exotech2 from "../resources/project-images/exotech/exotech-2.png";
 import exotech4 from "../resources/project-images/exotech/exotech-4.png";
 import exotech5 from "../resources/project-images/exotech/exotech-5.png";
 import exotech6 from "../resources/project-images/exotech/exotech-6.png";
 import exotech7 from "../resources/project-images/exotech/exotech-7.png";
+// ExoTech Dashboard Images
+import exotechDashboard1 from "../resources/project-images/exotech-dashboard/exotech-dashboard-1.png";
+import exotechDashboard2 from "../resources/project-images/exotech-dashboard/exotech-dashboard-2.png";
+import exotechDashboard3 from "../resources/project-images/exotech-dashboard/exotech-dashboard-3.png";
+import exotechDashboard4 from "../resources/project-images/exotech-dashboard/exotech-dashboard-4.png";
+import exotechDashboard5 from "../resources/project-images/exotech-dashboard/exotech-dashboard-5.png";
+import exotechDashboard6 from "../resources/project-images/exotech-dashboard/exotech-dashboard-6.png";
+import exotechDashboard7 from "../resources/project-images/exotech-dashboard/exotech-dashboard-7.png";
 
 const myProjects = [
   {
@@ -26,9 +35,13 @@ const myProjects = [
     title: "ExoTech - Admin Dashboard",
     desc: "The admin dashboard for the ecommerce store ExoTech. The dashboard features the ability to add and manage products, categories, orders and admins as well as display business statistics.",
     images: [
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      exotechDashboard1,
+      exotechDashboard2,
+      exotechDashboard3,
+      exotechDashboard4,
+      exotechDashboard5,
+      exotechDashboard6,
+      exotechDashboard7,
     ],
     tech: [
       "TypeScript",
