@@ -4,15 +4,7 @@ const ImageCarousel = ({ images }) => {
   const [activeImage, setActiveImage] = useState(0);
   const [showImageModal, setShowImageModal] = useState(false);
 
-  if (images.length === 1) {
-    return (
-      <img
-        className={"shadow-md w-full h-full"}
-        src={images[0]}
-        alt="Project Image"
-      />
-    );
-  }
+  const showControls = images.length > 1;
 
   const Carousel = (isBig) => {
     return (
@@ -22,14 +14,16 @@ const ImageCarousel = ({ images }) => {
           (isBig && "max-w-[1200px]")
         }
       >
-        <i
-          class="fa-solid fa-circle-arrow-left filter drop-shadow-lg absolute text-3xl text-white left-4 hover:cursor-pointer"
-          onClick={() => {
-            setActiveImage((prev) => {
-              return prev !== 0 ? prev - 1 : images.length - 1;
-            });
-          }}
-        />
+        {showControls && (
+          <i
+            class="fa-solid fa-circle-arrow-left filter drop-shadow-lg absolute text-3xl text-white left-4 hover:cursor-pointer"
+            onClick={() => {
+              setActiveImage((prev) => {
+                return prev !== 0 ? prev - 1 : images.length - 1;
+              });
+            }}
+          />
+        )}
         {images.map((image, index) => (
           <img
             onClick={() => !isBig && setShowImageModal(true)}
@@ -43,26 +37,30 @@ const ImageCarousel = ({ images }) => {
             key={index}
           />
         ))}
-        <i
-          class="fa-solid fa-circle-arrow-right filter drop-shadow-lg absolute text-3xl text-white right-4 hover:cursor-pointer"
-          onClick={() =>
-            setActiveImage((prev) => {
-              return prev !== images.length - 1 ? prev + 1 : 0;
-            })
-          }
-        />
-        <span className="flex absolute bottom-4 gap-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveImage(index)}
-              className={
-                "h-2 w-2 rounded-full border-none outline-none filter drop-shadow-lg cursor-pointer " +
-                (index === activeImage ? "bg-white" : " bg-gray-400")
+        {showControls && (
+          <>
+            <i
+              class="fa-solid fa-circle-arrow-right filter drop-shadow-lg absolute text-3xl text-white right-4 hover:cursor-pointer"
+              onClick={() =>
+                setActiveImage((prev) => {
+                  return prev !== images.length - 1 ? prev + 1 : 0;
+                })
               }
-            ></button>
-          ))}
-        </span>
+            />
+            <span className="flex absolute bottom-4 gap-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveImage(index)}
+                  className={
+                    "h-2 w-2 rounded-full border-none outline-none filter drop-shadow-lg cursor-pointer " +
+                    (index === activeImage ? "bg-white" : " bg-gray-400")
+                  }
+                ></button>
+              ))}
+            </span>
+          </>
+        )}
       </div>
     );
   };
