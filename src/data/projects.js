@@ -79,6 +79,16 @@ const myProjects = [
     githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
     demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
   },
+  {
+    title: "Movie Mobile App",
+    desc: "An App for viewing movie and tv show data such as trending and upcoming movies/tv shows, movie/tv show details and cast details.",
+    images: [
+      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    ],
+    tech: ["JavaScript", "React Native", "Expo", "Lodash", "NativeWind"],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+  },
 ];
 
 export default myProjects;
