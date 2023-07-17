@@ -34,8 +34,9 @@ const ImageCarousel = ({ images }) => {
           <img
             onClick={() => !isBig && setShowImageModal(true)}
             className={
-              "shadow-md w-full h-full cursor-pointer pointer-events-auto" +
-              (index !== activeImage && " hidden")
+              "shadow-md w-full cursor-pointer pointer-events-auto overflow-hidden" +
+              (index !== activeImage && " hidden") +
+              (isBig ? " h-full" : " max-h-[230px]")
             }
             src={image}
             alt="Project Image"
