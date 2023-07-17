@@ -56,7 +56,7 @@ const ImageCarousel = ({ images }) => {
               key={index}
               onClick={() => setActiveImage(index)}
               className={
-                "h-2 w-2 rounded-full border-none outline-none shadow-lg cursor-pointer " +
+                "h-2 w-2 rounded-full border-none outline-none filter drop-shadow-lg cursor-pointer " +
                 (index === activeImage ? "bg-white" : " bg-gray-400")
               }
             ></button>
