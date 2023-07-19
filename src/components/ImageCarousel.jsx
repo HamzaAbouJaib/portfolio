@@ -28,7 +28,7 @@ const ImageCarousel = ({ images }) => {
           <img
             onClick={() => !isBig && setShowImageModal(true)}
             className={
-              "shadow-md w-full cursor-pointer pointer-events-auto overflow-hidden" +
+              "shadow-md w-full cursor-pointer pointer-events-auto overflow-hidden no-selection" +
               (index !== activeImage && " hidden") +
               (isBig ? " h-full" : " max-h-[230px]")
             }
