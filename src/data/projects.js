@@ -20,6 +20,11 @@ import expense3 from "../resources/project-images/expense-app/expense-app-3.png"
 import expense4 from "../resources/project-images/expense-app/expense-app-4.png";
 import expense5 from "../resources/project-images/expense-app/expense-app-5.png";
 import expense6 from "../resources/project-images/expense-app/expense-app-6.png";
+// MovieVault
+import movievault1 from "../resources/project-images/movievault/movievault-1.png";
+import movievault2 from "../resources/project-images/movievault/movievault-2.png";
+import movievault3 from "../resources/project-images/movievault/movievault-3.png";
+import movievault4 from "../resources/project-images/movievault/movievault-4.png";
 
 const myProjects = [
   {
@@ -80,11 +85,9 @@ const myProjects = [
     demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
   },
   {
-    title: "Movie Mobile App",
+    title: "MovieVault - Movie App",
     desc: "An App for viewing movie and tv show data such as trending and upcoming movies/tv shows, movie/tv show details and cast details.",
-    images: [
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    ],
+    images: [movievault1, movievault2, movievault3, movievault4],
     tech: ["JavaScript", "React Native", "Expo", "Lodash", "NativeWind"],
     githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
     demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
