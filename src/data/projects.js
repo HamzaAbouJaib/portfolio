@@ -25,6 +25,8 @@ import movievault1 from "../resources/project-images/movievault/movievault-1.png
 import movievault2 from "../resources/project-images/movievault/movievault-2.png";
 import movievault3 from "../resources/project-images/movievault/movievault-3.png";
 import movievault4 from "../resources/project-images/movievault/movievault-4.png";
+// Island Generator
+import islandgen1 from "../resources/project-images/islandgen/islandgen-1.png";
 
 const myProjects = [
   {
@@ -68,14 +70,14 @@ const myProjects = [
     demoLink: "https://exotech-dashboard.vercel.app",
   },
   {
-    title: "Mesh Island Generator",
-    desc: "A Java application that generates an island mesh with various biomes and properties.",
-    images: [
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    ],
-    tech: ["Java", "Apache Maven", "Apache CLI", "JTS Library", "JUnit"],
-    githubLink: "https://github.com/HamzaAbouJaib/Island-Generator",
+    title: "MovieVault - Movie App",
+    desc: "An App for viewing movie and tv show data such as trending and upcoming movies/tv shows, movie/tv show details and cast details.",
+    images: [movievault1, movievault2, movievault3, movievault4],
+    tech: ["JavaScript", "React Native", "Expo", "Lodash", "NativeWind"],
+    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
   },
+
   {
     title: "Expense Tracker",
     desc: "An expense tracking website that helps users track their budget and expenses by providing transaction history and categorized expenses.",
@@ -85,12 +87,11 @@ const myProjects = [
     demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
   },
   {
-    title: "MovieVault - Movie App",
-    desc: "An App for viewing movie and tv show data such as trending and upcoming movies/tv shows, movie/tv show details and cast details.",
-    images: [movievault1, movievault2, movievault3, movievault4],
-    tech: ["JavaScript", "React Native", "Expo", "Lodash", "NativeWind"],
-    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
-    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+    title: "Mesh Island Generator",
+    desc: "A Java application that generates an island mesh with various biomes and properties.",
+    images: [islandgen1],
+    tech: ["Java", "Apache Maven", "Apache CLI", "JTS Library", "JUnit"],
+    githubLink: "https://github.com/HamzaAbouJaib/Island-Generator",
   },
 ];
 
