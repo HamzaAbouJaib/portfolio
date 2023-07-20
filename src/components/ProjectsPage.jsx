@@ -7,7 +7,7 @@ const ProjectsPage = () => {
       <h1 className="text-3xl font-semibold">Projects</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
       <p className="text-lg mt-10">
-        For more projects checkout my{" "}
+        Click on images to enlarge them. For more projects checkout my{" "}
         <a
           href="https://github.com/HamzaAbouJaib"
           className="text-blue-700 hover:underline"
