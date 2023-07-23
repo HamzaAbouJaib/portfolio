@@ -16,9 +16,21 @@ const LandingPage = () => {
           for full-stack web development.
         </p>
         <div className="flex items-center justify-center gap-4 text-[2rem]">
-          <i className="fa-brands fa-linkedin hover:text-blue-500 duration-300 cursor-pointer"></i>
-          <i className="fa-brands fa-github hover:text-blue-500 duration-300 cursor-pointer"></i>
-          <i className="fa-solid fa-envelope hover:text-blue-500 duration-300 cursor-pointer"></i>
+          <a
+            href="https://www.linkedin.com/in/hamzaaboujaib"
+            target="_blank"
+            className="fa-brands fa-linkedin hover:text-blue-500 duration-300 cursor-pointer"
+          ></a>
+          <a
+            href="https://github.com/HamzaAbouJaib"
+            target="_blank"
+            className="fa-brands fa-github hover:text-blue-500 duration-300 cursor-pointer"
+          ></a>
+          <a
+            href="mailto:aboujaih@mcmaster.ca"
+            target="_blank"
+            className="fa-solid fa-envelope hover:text-blue-500 duration-300 cursor-pointer"
+          ></a>
         </div>
         <div className="relative w-full mt-2">
           <a href="../public/Resume.pdf" target="_blank" className="resume-btn">
