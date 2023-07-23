@@ -74,8 +74,7 @@ const myProjects = [
     desc: "An App for viewing movie and tv show data such as trending and upcoming movies/tv shows, movie/tv show details and cast details.",
     images: [movievault1, movievault2, movievault3, movievault4],
     tech: ["JavaScript", "React Native", "Expo", "Lodash", "NativeWind"],
-    githubLink: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
-    demoLink: "https://expense-tracker-react-ts-app.netlify.app/",
+    githubLink: "https://github.com/HamzaAbouJaib/MovieVault",
   },
 
   {
