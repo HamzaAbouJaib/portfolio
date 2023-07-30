@@ -20,6 +20,7 @@ const mySkills = [
       "devicon-Node JS-plain",
       "devicon-Next JS-plain",
       "devicon-MongoDB-plain",
+      "devicon-Webpack-plain",
     ],
   },
   {

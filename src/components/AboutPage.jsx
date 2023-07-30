@@ -9,8 +9,8 @@ const frontPageskills = [
   "React",
   "TailwindCSS",
   "MongoDB",
-  "Git",
-  "GitHub",
+  "SCSS",
+  "Webpack",
 ];
 
 export const AboutPage = () => {
