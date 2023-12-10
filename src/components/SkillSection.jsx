@@ -11,10 +11,10 @@ export const SkillSection = ({ skillType, skills }) => {
           return (
             <div className="flex flex-col justify-center items-center">
               {skill.split("-")[0] === "noImage" ? (
-                <img src={noImage} className="h-8 w-8 md:h-16 md:w-16" />
+                <img src={noImage} className="h-8 w-8 md:h-12 md:w-12" />
               ) : (
                 <i
-                  className={`${skillIcon} text-primary text-[2rem] md:text-[4rem] colored`}
+                  className={`${skillIcon} text-primary text-[2rem] md:text-[3rem] colored`}
                   title={skillName}
                 />
               )}

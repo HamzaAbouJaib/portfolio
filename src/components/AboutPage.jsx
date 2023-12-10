@@ -29,7 +29,7 @@ export const AboutPage = () => {
       <h1 className="text-3xl font-semibold">About</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
       <div className="grid lg:grid-cols-10 mt-10 gap-x-20 gap-y-12 justify-between">
-        <div className="flex justify-between flex-col col-span-6 max-lg:pr-8">
+        <div className="flex justify-between flex-col col-span-6 max-lg:mr-8">
           <h3 className="text-2xl font-semibold mb-3">Who am I?</h3>
           <p className="text-xl mb-3">
             I am a third-year software engineering student at McMaster
