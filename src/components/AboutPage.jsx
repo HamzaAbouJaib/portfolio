@@ -29,7 +29,7 @@ export const AboutPage = () => {
       <h1 className="text-3xl font-semibold">About</h1>
       <div className="flex mt-2 w-[15%] border border-blue-700" />
       <div className="grid lg:grid-cols-10 mt-10 lg:gap-x-20 lg:gap-y-12 justify-between">
-        <div className="flex justify-between flex-col lg:col-span-6 max-lg:mr-2">
+        <div className="flex justify-between flex-col lg:col-span-5 max-lg:mr-2">
           <h3 className="text-2xl font-semibold mb-3">Who am I?</h3>
           <p className="text-xl mb-3 break-words">
             I am a third-year software engineering student at McMaster
@@ -48,9 +48,11 @@ export const AboutPage = () => {
             positively impact users through intuitive design, seamless
             functionality, and engaging interactions motivates me every day.
           </p>
-          <div className="mt-10">
+        </div>
+        <div className="flex flex-col justify-between col-span-5 max-lg:mt-10">
+        <div>
             <h3 className="text-2xl font-semibold mb-3">Technical Skills</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-3">
               {frontPageskills.map((skill) => (
                 <Skill name={skill} />
               ))}
@@ -59,9 +61,9 @@ export const AboutPage = () => {
               <SkillModal setShowSkillsModal={setShowSkillsModal} />
             )}
           </div>
-          <div className="flex flex-wrap gap-y-3">
+          <div className="flex flex-wrap gap-5 mt-10">
             <button
-              className="btn-secondary mt-10 mr-5"
+              className="btn-secondary"
               onClick={() => setShowSkillsModal(true)}
             >
               View All Skills
@@ -74,9 +76,6 @@ export const AboutPage = () => {
               Download Resume
             </a>
           </div>
-        </div>
-        <div className="flex flex-col justify-between col-span-4 max-lg:hidden">
-          <h1>Image</h1>
         </div>
       </div>
     </section>
