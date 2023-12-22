@@ -7,10 +7,14 @@ const frontPageskills = [
   "JavaScript",
   "TypeScript",
   "React",
-  "TailwindCSS",
+  "Next.js",
+  "Node.js",
+  "Python",
+  "MySQL",
   "MongoDB",
-  "SCSS",
   "Webpack",
+  "Git",
+  "Linux"
 ];
 
 export const AboutPage = () => {
