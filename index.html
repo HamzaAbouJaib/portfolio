@@ -12,12 +12,21 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <title>Hamza Abou Jaib</title>
-    <script type="module" crossorigin src="https://hamzaaboujaib.github.io/portfolio/assets/index-cc40f1d2.js"></script>
+    <script type="module" crossorigin src="https://hamzaaboujaib.github.io/portfolio/assets/index-e2dd7cfb.js"></script>
     <link rel="stylesheet" href="https://hamzaaboujaib.github.io/portfolio/assets/index-eb693cc7.css">
   </head>
 
   <body>
     <div id="root"></div>
     
+    <script>
+      (() => {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
