@@ -5,6 +5,17 @@ const Navigation = () => {
   const [opened, setOpened] = useState(false);
   const { pathname, hash, key } = useLocation();
 
+  const [theme, setTheme] = useState(localStorage.theme || window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+
+  useEffect(() => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }      
+
+  }, [theme]);
+
   useEffect(() => {
     // if not a hash link, scroll to top
     if (hash === "") {
@@ -25,12 +36,12 @@ const Navigation = () => {
   return (
     <div
       className={
-        "lg:shadow-md w-full fixed z-10 " + (opened ? "" : "shadow-md")
+        "shadow-md w-full fixed z-10 dark:shadow-dark-secondary/10 " + (opened ? "" : "shadow-md")
       }
     >
       <div
         className={
-          "flex items-center justify-between bg-white lg:w-[90%] 2xl:w-[80%] mx-auto py-5 md:px-10 px-7 z-30"
+          "flex items-center justify-between bg-white dark:bg-dark-background lg:w-[90%] 2xl:w-[80%] mx-auto py-5 md:px-10 px-7 z-30"
         }
       >
         <div className="font-semibold text-2xl cursor-pointer flex items-baseline">
@@ -49,11 +60,11 @@ const Navigation = () => {
             opened ? "top-10 " : "top-[-490px]"
           }`}
         >
-          <ul className="lg:flex lg:items-center">
+          <ul className="lg:flex lg:items-center dark:bg-dark-background">
             <li className="lg:ml-8 text-xl lg:my-0">
               <Link
                 to="/#about"
-                className="hover:text-primary duration-500"
+                className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
                 About
@@ -62,7 +73,7 @@ const Navigation = () => {
             <li className="lg:ml-8 text-xl lg:my-0 my-5">
               <Link
                 to="/#projects"
-                className="hover:text-primary duration-500"
+                className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
                 Projects
@@ -71,11 +82,19 @@ const Navigation = () => {
             <li className="lg:ml-8 text-xl lg:my-0">
               <Link
                 to="/resume"
-                className="hover:text-primary duration-500"
+                className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
                 Resume
               </Link>
+            </li>
+            <li className="lg:ml-8 text-xl lg:my-0">
+              <button className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")} onClick={() => setTheme(prev => {
+            const newTheme = prev == "dark" ? "light" : "dark";
+            localStorage.theme = newTheme;
+            return newTheme;
+          })}>
+              </button>
             </li>
           </ul>
         </div>

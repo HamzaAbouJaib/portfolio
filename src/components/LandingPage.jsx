@@ -8,7 +8,7 @@ const LandingPage = () => {
         {/* <h3 className="text-3xl sm:text-4xl font-bold text-center">
           Software Engineering Student
         </h3> */}
-        <h5 className="text-3xl font-bold text-center text-gray-800 border-b-2 border-b-blue-500 pb-5">
+        <h5 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-300 border-b-2 border-b-blue-500 pb-5">
           Software Developer
         </h5>
         <p className="text-center text-xl max-w-[40rem]">
