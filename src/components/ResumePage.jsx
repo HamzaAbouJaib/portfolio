@@ -8,8 +8,8 @@ const ResumePage = () => {
       >
         <p>
           Unable to display PDF file.{" "}
-          <a href="../public/Resume.pdf" target="_blank">
-            <strong><u>Download</u></strong>
+          <a className="font-bold underline" href="../public/Resume.pdf" target="_blank">
+            Download
           </a>{" "}
           instead.
         </p>
