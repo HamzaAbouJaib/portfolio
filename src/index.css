@@ -57,7 +57,7 @@ html {
 }
 
 .burger .bar {
-  @apply p-0 w-full h-[2px] bg-black block rounded-md transition-all duration-500 ease-in-out absolute;
+  @apply p-0 w-full h-[2px] bg-black dark:bg-dark-text block rounded-md transition-all duration-500 ease-in-out absolute;
 }
 
 .bar1 {
@@ -73,7 +73,7 @@ html {
 }
 
 .active .bar2 {
-  @apply bg-transparent;
+  @apply bg-transparent dark:bg-transparent;
 }
 
 .bar3 {
