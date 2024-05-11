@@ -8,8 +8,8 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <Navigation />
+    <div className="dark:bg-dark-background dark:text-dark-text">
+      <Navigation/>
       <Routes>
         <Route
           path="/"

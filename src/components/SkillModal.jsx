@@ -11,7 +11,7 @@ const SkillModal = ({ setShowSkillsModal }) => {
         if (target && target.id === "background") setShowSkillsModal(false);
       }}
     >
-      <div className="w-[80%] md:w-[50%] max-h-[80%] bg-slate-100 rounded-xl p-10 overflow-scroll">
+      <div className="w-[80%] md:w-[50%] max-h-[80%] bg-slate-100 dark:bg-slate-900 rounded-xl p-10 overflow-scroll">
         <div className="flex justify-between items-center mb-10">
           <h2 className="text-3xl font-semibold">Skills and Technologies</h2>
           <svg
