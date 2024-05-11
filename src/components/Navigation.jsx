@@ -48,7 +48,7 @@ const Navigation = () => {
           <Link to="/">Hamza Abou Jaib</Link>
         </div>
         <div className="flex items-center gap-8">
-          <div className="text-xl">
+          <div className="text-xl lg:hidden">
               <button className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")} onClick={() => setTheme(prev => {
             const newTheme = prev == "dark" ? "light" : "dark";
             localStorage.theme = newTheme;
