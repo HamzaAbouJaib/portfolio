@@ -47,6 +47,15 @@ const Navigation = () => {
         <div className="font-semibold text-2xl cursor-pointer flex items-baseline">
           <Link to="/">Hamza Abou Jaib</Link>
         </div>
+        <div className="flex items-center gap-8">
+          <div className="text-xl">
+              <button className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")} onClick={() => setTheme(prev => {
+            const newTheme = prev == "dark" ? "light" : "dark";
+            localStorage.theme = newTheme;
+            return newTheme;
+          })}>
+              </button>
+            </div>
         <div
           className={"burger " + (opened ? "active" : "")}
           onClick={() => setOpened((prev) => !prev)}
@@ -55,12 +64,14 @@ const Navigation = () => {
           <span className="bar bar2"></span>
           <span className="bar bar3"></span>
         </div>
+        </div>
+        
         <div
-          className={`lg:flex lg:items-center lg:pb-0 max-lg:py-10 bg-white absolute max-lg:shadow-lg lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-10 max-lg:transition-top max-lg:duration-500 max-lg:ease-in-out ${
+          className={`dark:bg-dark-background lg:flex lg:items-center lg:pb-0 max-lg:py-10 bg-white absolute dark:shadow-dark-secondary/10 max-lg:shadow-lg lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-10 max-lg:transition-top max-lg:duration-500 max-lg:ease-in-out ${
             opened ? "top-10 " : "top-[-490px]"
           }`}
         >
-          <ul className="lg:flex lg:items-center dark:bg-dark-background">
+          <ul className="lg:flex lg:items-center">
             <li className="lg:ml-8 text-xl lg:my-0">
               <Link
                 to="/#about"
@@ -88,7 +99,7 @@ const Navigation = () => {
                 Resume
               </Link>
             </li>
-            <li className="lg:ml-8 text-xl lg:my-0">
+            <li className="lg:ml-8 text-xl max-lg:hidden lg:my-0">
               <button className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")} onClick={() => setTheme(prev => {
             const newTheme = prev == "dark" ? "light" : "dark";
             localStorage.theme = newTheme;
