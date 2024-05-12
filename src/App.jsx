@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Navigation from "./components/Navigation";
 import ProjectsPage from "./components/ProjectsPage";
@@ -10,19 +10,7 @@ function App() {
   return (
     <div className="dark:bg-dark-background dark:text-dark-text">
       <Navigation/>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="lg:w-[90%] 2xl:w-[80%] mx-auto">
-              <LandingPage />
-              <AboutPage />
-              <ProjectsPage />
-            </div>
-          }
-        />
-        <Route path="/resume" element={<ResumePage />} />
-      </Routes>
+      <Outlet />
       <Footer />
     </div>
   );
