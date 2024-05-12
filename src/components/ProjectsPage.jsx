@@ -18,7 +18,7 @@ const ProjectsPage = () => {
       </p>
       <div className="mt-5 mb-5 grid max-md:flex max-md:flex-col max-md:items-center max-[1250px]:grid-cols-2 grid-cols-3 gap-y-16 gap-x-12">
         {myProjects.slice(0, 6).map((project) => (
-          <ProjectCard {...project} />
+          <ProjectCard {...project} key={project.title} />
         ))}
       </div>
     </section>
