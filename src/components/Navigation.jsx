@@ -45,7 +45,7 @@ const Navigation = () => {
         }
       >
         <div className="font-semibold text-2xl cursor-pointer flex items-baseline">
-          <Link to="/">Hamza Abou Jaib</Link>
+          <Link to="/portfolio">Hamza Abou Jaib</Link>
         </div>
         <div className="flex items-center gap-8">
           <div className="text-xl lg:hidden">
@@ -74,7 +74,7 @@ const Navigation = () => {
           <ul className="lg:flex lg:items-center">
             <li className="lg:ml-8 text-xl lg:my-0">
               <Link
-                to="/#about"
+                to="/portfolio#about"
                 className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
@@ -83,7 +83,7 @@ const Navigation = () => {
             </li>
             <li className="lg:ml-8 text-xl lg:my-0 my-5">
               <Link
-                to="/#projects"
+                to="/portfolio#projects"
                 className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
@@ -92,7 +92,7 @@ const Navigation = () => {
             </li>
             <li className="lg:ml-8 text-xl lg:my-0">
               <Link
-                to="/resume"
+                to="/portfolio/resume"
                 className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
