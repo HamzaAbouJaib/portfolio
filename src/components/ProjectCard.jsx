@@ -12,7 +12,7 @@ const ProjectCard = ({ title, desc, images, tech, githubLink, demoLink }) => {
           <p className="text-lg leading-6 mb-2 break-words">{desc}</p>
           <div className="flex gap-2 flex-wrap">
             {tech.map((t) => (
-              <span className="bg-blue-500/20 text-blue-600 py-1 px-4 font-semibold">
+              <span key={t} className="bg-blue-500/20 text-blue-600 py-1 px-4 font-semibold">
                 {t}
               </span>
             ))}
