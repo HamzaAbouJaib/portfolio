@@ -33,7 +33,7 @@ const LandingPage = () => {
           ></a>
         </div>
         <div className="relative w-full mt-2">
-          <a href={window.location.href.includes("hamzaaboujaib.github.io") ? "/Resume.pdf" : "../public/Resume.pdf"} target="_blank" className="resume-btn">
+          <a href={window.location.href.includes("hamzaaboujaib.github.io") ? "Resume.pdf" : "../public/Resume.pdf"} target="_blank" className="resume-btn">
             Download Resume
           </a>
         </div>
