@@ -73,7 +73,7 @@ export const AboutPage = () => {
               View All Skills
             </button>
             <a
-              href={window.location.href.includes("hamzaaboujaib.github.io") ? "/Resume.pdf" : "../public/Resume.pdf"}
+              href={window.location.href.includes("hamzaaboujaib.github.io") ? "Resume.pdf" : "../public/Resume.pdf"}
               target="_blank"
               className="resume-btn-secondary"
             >
