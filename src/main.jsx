@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { BrowserRouter, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import LandingPage from "./components/LandingPage.jsx";
 import ResumePage from "./components/ResumePage.jsx";
 import { AboutPage } from "./components/AboutPage.jsx";
@@ -15,19 +19,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/portfolio",
-        element:
-        <div className="lg:w-[90%] 2xl:w-[80%] mx-auto">
-        <LandingPage />
-        <AboutPage />
-        <ProjectsPage />
-      </div>
+        element: (
+          <div className="lg:w-[90%] 2xl:w-[80%] mx-auto font-mono">
+            <LandingPage />
+            <AboutPage />
+            <ProjectsPage />
+          </div>
+        ),
       },
       {
         path: "/portfolio/resume",
-        element: <ResumePage />
-      }
-    ]
-  }
+        element: <ResumePage />,
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -5,15 +5,23 @@ const Navigation = () => {
   const [opened, setOpened] = useState(false);
   const { pathname, hash, key } = useLocation();
 
-  const [theme, setTheme] = useState(localStorage.theme || window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+  const [theme, setTheme] = useState(
+    localStorage.theme ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light"
+  );
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark')
-    }      
-
+      document.documentElement.classList.remove("dark");
+    }
   }, [theme]);
 
   useEffect(() => {
@@ -34,63 +42,81 @@ const Navigation = () => {
   }, [pathname, hash, key]); // do this on route change
 
   return (
-    <div
-      className={
-        "shadow-md w-full fixed z-10 dark:shadow-dark-secondary/10 " + (opened ? "" : "shadow-md")
-      }
-    >
+    <div className={"w-full fixed z-10 text-md font-mono "}>
       <div
         className={
-          "flex items-center justify-between bg-white dark:bg-dark-background lg:w-[90%] 2xl:w-[80%] mx-auto py-5 md:px-10 px-7 z-30"
+          "flex items-center justify-between bg-white dark:bg-dark-background mx-auto py-5 md:px-10 px-7 z-30"
         }
       >
-        <div className="font-semibold text-2xl cursor-pointer flex items-baseline">
+        <div className="font-semibold cursor-pointer flex items-baseline">
           <Link to="/portfolio">Hamza Abou Jaib</Link>
         </div>
         <div className="flex items-center gap-8">
-          <div className="text-xl lg:hidden">
-              <button className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")} onClick={() => setTheme(prev => {
-            const newTheme = prev == "dark" ? "light" : "dark";
-            localStorage.theme = newTheme;
-            return newTheme;
-          })}>
-              </button>
-            </div>
-        <div
-          className={"burger " + (opened ? "active" : "")}
-          onClick={() => setOpened((prev) => !prev)}
-        >
-          <span className="bar bar1"></span>
-          <span className="bar bar2"></span>
-          <span className="bar bar3"></span>
+          <div className="lg:hidden">
+            <button
+              className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")}
+              onClick={() =>
+                setTheme((prev) => {
+                  const newTheme = prev == "dark" ? "light" : "dark";
+                  localStorage.theme = newTheme;
+                  return newTheme;
+                })
+              }
+            ></button>
+          </div>
+          <div
+            className={"burger " + (opened ? "active" : "")}
+            onClick={() => setOpened((prev) => !prev)}
+          >
+            <span className="bar bar1"></span>
+            <span className="bar bar2"></span>
+            <span className="bar bar3"></span>
+          </div>
         </div>
-        </div>
-        
+
         <div
-          className={`dark:bg-dark-background lg:flex lg:items-center lg:pb-0 max-lg:py-10 bg-white absolute dark:shadow-dark-secondary/10 max-lg:shadow-lg lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-10 max-lg:transition-top max-lg:duration-500 max-lg:ease-in-out ${
+          className={`dark:bg-dark-background lg:flex lg:items-center lg:pb-0 max-lg:py-5 bg-white absolute dark:shadow-dark-secondary/10 max-lg:shadow-lg lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-10 max-lg:transition-top max-lg:duration-500 max-lg:ease-in-out ${
             opened ? "top-10 " : "top-[-490px]"
           }`}
         >
-          <ul className="lg:flex lg:items-center">
-            <li className="lg:ml-8 text-xl lg:my-0">
+          <ul className="lg:flex lg:items-center lg:gap-5">
+            <li className="lg:my-0">
               <Link
-                to="/portfolio#about"
+                to="/portfolio"
                 className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
-                About
+                Home
               </Link>
             </li>
-            <li className="lg:ml-8 text-xl lg:my-0 my-5">
+            <li className="lg:my-0 my-5">
               <Link
-                to="/portfolio#projects"
+                to="/portfolio/experience"
+                className="hover:text-primary hover:dark:text-dark-primary duration-500"
+                onClick={() => setOpened(false)}
+              >
+                Experience
+              </Link>
+            </li>
+            <li className="lg:my-0 my-5">
+              <Link
+                to="/portfolio/projects"
                 className="hover:text-primary hover:dark:text-dark-primary duration-500"
                 onClick={() => setOpened(false)}
               >
                 Projects
               </Link>
             </li>
-            <li className="lg:ml-8 text-xl lg:my-0">
+            <li className="lg:my-0 my-5">
+              <Link
+                to="/portfolio/blogs"
+                className="hover:text-primary hover:dark:text-dark-primary duration-500"
+                onClick={() => setOpened(false)}
+              >
+                Blogs
+              </Link>
+            </li>
+            <li className="lg:my-0">
               <Link
                 to="/portfolio/resume"
                 className="hover:text-primary hover:dark:text-dark-primary duration-500"
@@ -99,13 +125,19 @@ const Navigation = () => {
                 Resume
               </Link>
             </li>
-            <li className="lg:ml-8 text-xl max-lg:hidden lg:my-0">
-              <button className={"fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")} onClick={() => setTheme(prev => {
-            const newTheme = prev == "dark" ? "light" : "dark";
-            localStorage.theme = newTheme;
-            return newTheme;
-          })}>
-              </button>
+            <li className="max-lg:hidden lg:my-0">
+              <button
+                className={
+                  "fa-solid " + (theme == "dark" ? "fa-sun" : "fa-moon")
+                }
+                onClick={() =>
+                  setTheme((prev) => {
+                    const newTheme = prev == "dark" ? "light" : "dark";
+                    localStorage.theme = newTheme;
+                    return newTheme;
+                  })
+                }
+              ></button>
             </li>
           </ul>
         </div>
