@@ -1,21 +1,101 @@
+import { useEffect, useState } from "react";
+import { Skill } from "./Skill";
+import SkillModal from "./SkillModal";
+
+const frontPageskills = [
+  "HTML/CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Python",
+  "MySQL",
+  "MongoDB",
+  "Webpack",
+  "Git",
+  "Linux",
+];
+
 const LandingPage = () => {
+  const [showSkillsModal, setShowSkillsModal] = useState(false);
+
+  useEffect(() => {
+    if (showSkillsModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showSkillsModal]);
+
   return (
-    <section className="flex items-center justify-center h-screen">
-      <div className="max-w-[850px] flex flex-col items-center gap-6 px-6 lg:px-10">
-        <h1 className="text-4xl sm:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-500">
-          Hamza Abou Jaib
-        </h1>
-        {/* <h3 className="text-3xl sm:text-4xl font-bold text-center">
+    <section className="flex pt-40 justify-center min-h-screen">
+      <div className="max-w-[750px] flex flex-col items-start gap-6 px-6 lg:px-10">
+        <div>
+          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-500">
+            Hamza Abou Jaib
+          </h1>
+          {/* <h3 className="text-3xl sm:text-4xl font-bold text-center">
           Software Engineering Student
         </h3> */}
-        <h5 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-300 border-b-2 border-b-blue-500 pb-5">
-          Software Developer
-        </h5>
-        <p className="text-center text-xl max-w-[40rem]">
-          A Software Engineering student at McMaster University with a passion
-          for full-stack web development.
-        </p>
-        <div className="flex items-center justify-center gap-4 text-[2rem]">
+          <h5 className=" text-gray-800 dark:text-gray-500">
+            Software Engineering Student
+          </h5>
+        </div>
+        <div className="flex flex-col gap-4 break-words">
+          <p className="text-lg text-gray-800 dark:text-gray-400">
+            A Software Engineering student at McMaster University with a passion
+            for full-stack web development.
+          </p>
+          <p className="text-lg text-gray-800 dark:text-gray-400">
+            I am a third-year software engineering student at McMaster
+            University. My passion lies in the field of web and app development.
+          </p>
+          <p className="text-lg text-gray-800 dark:text-gray-400">
+            Since taking my first programming course in high school, I have been
+            captivated by the inner workings of the web and the fascinating
+            world of technology. It was during those early experiences that I
+            discovered my love for programming and the web.
+          </p>
+          <p className="text-lg text-gray-800 dark:text-gray-400">
+            I am driven by the desire to create meaningful digital experiences
+            that make a difference in people's lives. The opportunity to
+            positively impact users through intuitive design, seamless
+            functionality, and engaging interactions motivates me every day.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-2xl font-semibold mb-3">Technical Skills</h3>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono">
+            {frontPageskills.map((skill) => (
+              <Skill name={skill} key={skill} />
+            ))}
+          </div>
+          {showSkillsModal && (
+            <SkillModal setShowSkillsModal={setShowSkillsModal} />
+          )}
+        </div>
+        <div className="flex flex-wrap gap-5 mt-2">
+          <button
+            className="btn-secondary"
+            onClick={() => setShowSkillsModal(true)}
+          >
+            View All Skills
+          </button>
+          <a
+            href={
+              window.location.href.includes("hamzaaboujaib.github.io")
+                ? "Resume.pdf"
+                : "../public/Resume.pdf"
+            }
+            target="_blank"
+            className="resume-btn-secondary"
+          >
+            Download Resume
+          </a>
+        </div>
+
+        {/* <div className="flex items-center justify-center gap-4 text-[2rem]">
           <a
             href="https://www.linkedin.com/in/hamzaaboujaib"
             target="_blank"
@@ -33,10 +113,18 @@ const LandingPage = () => {
           ></a>
         </div>
         <div className="relative w-full mt-2">
-          <a href={window.location.href.includes("hamzaaboujaib.github.io") ? "Resume.pdf" : "../public/Resume.pdf"} target="_blank" className="resume-btn">
+          <a
+            href={
+              window.location.href.includes("hamzaaboujaib.github.io")
+                ? "Resume.pdf"
+                : "../public/Resume.pdf"
+            }
+            target="_blank"
+            className="resume-btn"
+          >
             Download Resume
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

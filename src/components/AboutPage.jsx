@@ -14,7 +14,7 @@ const frontPageskills = [
   "MongoDB",
   "Webpack",
   "Git",
-  "Linux"
+  "Linux",
 ];
 
 export const AboutPage = () => {
@@ -54,7 +54,7 @@ export const AboutPage = () => {
           </p>
         </div>
         <div className="flex flex-col justify-between col-span-5 max-lg:mt-10">
-        <div>
+          <div>
             <h3 className="text-2xl font-semibold mb-3">Technical Skills</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-3">
               {frontPageskills.map((skill) => (
@@ -73,7 +73,11 @@ export const AboutPage = () => {
               View All Skills
             </button>
             <a
-              href={window.location.href.includes("hamzaaboujaib.github.io") ? "Resume.pdf" : "../public/Resume.pdf"}
+              href={
+                window.location.href.includes("hamzaaboujaib.github.io")
+                  ? "Resume.pdf"
+                  : "../public/Resume.pdf"
+              }
               target="_blank"
               className="resume-btn-secondary"
             >

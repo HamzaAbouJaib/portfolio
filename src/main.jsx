@@ -20,10 +20,9 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: (
-          <div className="lg:w-[90%] 2xl:w-[80%] mx-auto font-mono">
+          <div className="lg:w-[90%] 2xl:w-[80%] mx-auto font-sans">
             <LandingPage />
-            <AboutPage />
-            <ProjectsPage />
+            {/* <ProjectsPage /> */}
           </div>
         ),
       },
