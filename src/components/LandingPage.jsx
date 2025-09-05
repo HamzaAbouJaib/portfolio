@@ -32,7 +32,7 @@ const LandingPage = () => {
     <section className="flex pt-40 justify-center min-h-screen">
       <div className="max-w-[750px] flex flex-col items-start gap-6 px-6 lg:px-10">
         <div>
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-500">
+          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-green-400">
             Hamza Abou Jaib
           </h1>
           {/* <h3 className="text-3xl sm:text-4xl font-bold text-center">
