@@ -70,12 +70,21 @@ const LandingPage = () => {
             {frontPageskills.map((skill) => (
               <Skill name={skill} key={skill} />
             ))}
+            <div className="flex items-baseline gap-1 cursor-pointer border-b border-yellow-300 border-opacity-0 hover:border-opacity-100 transition-all duration-300 ease-in">
+              <i className="fa-solid text-yellow-300">&#128193;</i>
+              <p
+                className="text-slate-800 dark:text-gray-300"
+                onClick={() => setShowSkillsModal(true)}
+              >
+                View More
+              </p>
+            </div>
           </div>
           {showSkillsModal && (
             <SkillModal setShowSkillsModal={setShowSkillsModal} />
           )}
         </div>
-        <div className="flex flex-wrap gap-5 mt-2">
+        {/* <div className="flex flex-wrap gap-5 mt-2 font-mono">
           <button
             className="btn-secondary"
             onClick={() => setShowSkillsModal(true)}
@@ -93,7 +102,7 @@ const LandingPage = () => {
           >
             Download Resume
           </a>
-        </div>
+        </div> */}
 
         {/* <div className="flex items-center justify-center gap-4 text-[2rem]">
           <a
