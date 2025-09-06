@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Skill } from "./Skill";
-import SkillModal from "./SkillModal";
+import { Skill } from "../components/Skill";
+import SkillModal from "../components/SkillModal";
 
 const frontPageskills = [
   "HTML/CSS",

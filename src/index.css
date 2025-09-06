@@ -28,16 +28,16 @@ html {
 }
 
 .resume-btn {
-  @apply text-xl dark:bg-dark-primary bg-blue-500 px-3 py-2 text-blue-500 absolute w-max top-0 left-[50%] translate-x-[-50%];
+  @apply dark:bg-dark-primary bg-blue-500 px-3 py-2 text-blue-500 absolute w-max top-0 left-[50%] translate-x-[-50%];
 }
 
 .resume-btn::before {
   content: "Donwload Resume";
-  @apply text-xl dark:bg-dark-secondary bg-slate-800 px-3 py-2 text-white dark:text-dark-background absolute w-max -top-2 left-[46%] translate-x-[-50%] hover:top-0 hover:left-[50%] transition-all duration-500 ease-in-out;
+  @apply dark:bg-dark-secondary bg-slate-800 px-3 py-2 text-white dark:text-dark-background absolute w-max -top-2 left-[46%] translate-x-[-50%] hover:top-0 hover:left-[50%] transition-all duration-500 ease-in-out;
 }
 
 .resume-btn-secondary {
-  @apply text-xl w-max dark:bg-dark-primary bg-blue-500 px-3 py-2 text-white transition-all duration-500 ease-in-out;
+  @apply w-max dark:bg-dark-primary bg-blue-500 px-3 py-2 text-white transition-all duration-500 ease-in-out;
 }
 
 .resume-btn-secondary:hover {
@@ -45,7 +45,7 @@ html {
 }
 
 .btn-secondary {
-  @apply text-xl w-max dark:bg-dark-secondary bg-slate-800 px-3 py-2 text-white dark:text-dark-background transition-all duration-500 ease-in-out;
+  @apply w-max dark:bg-dark-secondary bg-slate-800 px-3 py-2 text-white dark:text-dark-background transition-all duration-500 ease-in-out;
 }
 
 .btn-secondary:hover {

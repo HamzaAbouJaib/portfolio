@@ -7,10 +7,9 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import LandingPage from "./components/LandingPage.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
 import ResumePage from "./components/ResumePage.jsx";
-import { AboutPage } from "./components/AboutPage.jsx";
-import ProjectsPage from "./components/ProjectsPage.jsx";
+import ProjectsPage from "./pages/ProjectsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,9 +19,17 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: (
-          <div className="lg:w-[90%] 2xl:w-[80%] mx-auto font-sans">
+          <div className="font-sans">
             <LandingPage />
             {/* <ProjectsPage /> */}
+          </div>
+        ),
+      },
+      {
+        path: "/portfolio/projects",
+        element: (
+          <div className="font-sans">
+            <ProjectsPage />
           </div>
         ),
       },
