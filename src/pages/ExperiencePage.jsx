@@ -1,13 +1,10 @@
-import myProjects from "../data/projects";
-import ProjectCard from "../components/ProjectCard";
-
-const ProjectsPage = () => {
+const ExperiencePage = () => {
   return (
-    <section id="projects" className="flex pt-40 justify-center min-h-screen">
+    <section id="experience" className="flex pt-40 justify-center min-h-screen">
       <div className="max-w-[750px] xl:max-w-[950px] flex flex-col items-start gap-6 px-6 lg:px-10">
         <div>
           <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-green-400">
-            Projects
+            Experience
           </h1>
           <div className="flex mt-2 border border-green-400" />
         </div>
@@ -22,13 +19,11 @@ const ProjectsPage = () => {
           .
         </p>
         <div className="mb-5 grid max-md:flex max-md:flex-col max-md:items-center grid-cols-2 gap-16">
-          {myProjects.slice(0, 6).map((project) => (
-            <ProjectCard {...project} key={project.title} />
-          ))}
+          Experience
         </div>
       </div>
     </section>
   );
 };
 
-export default ProjectsPage;
+export default ExperiencePage;

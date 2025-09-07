@@ -10,6 +10,7 @@ import {
 import LandingPage from "./pages/LandingPage.jsx";
 import ResumePage from "./components/ResumePage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
+import ExperiencePage from "./pages/ExperiencePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,14 @@ const router = createBrowserRouter([
         element: (
           <div className="font-sans">
             <ProjectsPage />
+          </div>
+        ),
+      },
+      {
+        path: "/portfolio/experience",
+        element: (
+          <div className="font-sans">
+            <ExperiencePage />
           </div>
         ),
       },
