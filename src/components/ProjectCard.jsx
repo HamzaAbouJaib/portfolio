@@ -3,15 +3,17 @@ import ImageCarousel from "./ImageCarousel";
 const ProjectCard = ({ title, desc, images, tech, githubLink, demoLink }) => {
   return (
     <div className="flex flex-col gap-5 w-full bg-slate-500/10 shadow-md shadow-gray-800 rounded-xl">
-      {/* <div className="w-full">
+      <div className="w-full">
         <ImageCarousel images={images} />
-      </div> */}
+      </div>
       <div className="flex flex-col justify-between h-full gap-3 px-4 py-3">
-        <div className="space-y-2">
+        <div className="">
           <h3 className="text-xl font-semibold font-sans leading-none pb-2">
             {title}
           </h3>
-          {/* <p className="text-lg leading-6 mb-2 break-words">{desc}</p> */}
+          <p className="text-sm leading-6 mb-2 break-words text-gray-400">
+            {desc.substring(0, 10)}
+          </p>
           <div className="flex gap-2 flex-wrap text-xs font-mono">
             {tech.map((t) => (
               <span

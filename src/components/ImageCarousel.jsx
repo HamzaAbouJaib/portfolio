@@ -16,7 +16,10 @@ const ImageCarousel = ({ images }) => {
       >
         {showControls && (
           <i
-            className="fa-solid fa-circle-arrow-left filter drop-shadow-lg absolute text-3xl text-white left-4 hover:cursor-pointer"
+            className={
+              "fa-solid fa-circle-arrow-left text-gray-600/60 filter drop-shadow-lg absolute left-4 hover:cursor-pointer" +
+              (isBig ? " text-5xl" : " text-3xl")
+            }
             onClick={() => {
               setActiveImage((prev) => {
                 return prev !== 0 ? prev - 1 : images.length - 1;
@@ -40,7 +43,10 @@ const ImageCarousel = ({ images }) => {
         {showControls && (
           <>
             <i
-              className="fa-solid fa-circle-arrow-right filter drop-shadow-lg absolute text-3xl text-white right-4 hover:cursor-pointer"
+              className={
+                "fa-solid fa-circle-arrow-right filter drop-shadow-lg absolute text-gray-600/60 right-4 hover:cursor-pointer" +
+                (isBig ? " text-5xl" : " text-3xl")
+              }
               onClick={() =>
                 setActiveImage((prev) => {
                   return prev !== images.length - 1 ? prev + 1 : 0;
